@@ -1,0 +1,149 @@
+/* Colors */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --TextColor: hsl(240, 1%, 48%);
+  --WhiteColorDeam: hsl(0, 0%, 93%);
+  --greybg: hsl(0, 0%, 96%);
+  --grayText: rgb(190, 190, 190);
+  --InputColor: hsl(330, 12%, 97%);
+}
+
+.navBarSection {
+  .header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+
+    .logoDiv {
+      .logo {
+        color: var(--WhiteColor);
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon {
+        color: var(--PrimaryColor);
+        font-size: 25px;
+        margin-right: 10px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .navBar {
+        background: var(--greybg);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        padding: 2rem 1rem;
+        box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+        transition: 0.5s ease;
+        z-index: 999;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .navLists {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin: auto;
+          gap: 1rem;
+
+          .navItem {
+            padding: 0.1rem 0;
+          }
+
+          .navLink {
+            color: var(--TextColor);
+            font-size: 0.9rem;
+            font-weight: 600;
+            &:hover {
+              color: var(--PrimaryColor);
+            }
+          }
+        }
+
+        .headerBtns {
+          flex-direction: column;
+          align-items: center;
+
+          .btn {
+            margin-top: 1rem;
+          }
+
+          a {
+            font-weight: 600;
+            &:hover {
+              color: var(--WhiteColor);
+            }
+          }
+        }
+
+        .loginBtn {
+          background: none;
+          border: 1px solid var(--PrimaryColor);
+
+          a {
+            color: var(--PrimaryColor);
+          }
+          &:hover {
+            background: var(--HoverColor);
+            a {
+              color: var(--WhiteColor);
+            }
+          }
+        }
+
+        .closeNavbar {
+          position: absolute;
+          top: 1rem;
+          right: 1.5rem;
+          color: var(--PrimaryColor);
+          cursor: pointer;
+          .icon {
+            font-size: 25px;
+          }
+          &:hover .icon {
+            color: var(--HoverColor);
+          }
+        }
+      }
+
+      .activeNavbar {
+        left: 0;
+      }
+    }
+
+    .toggleNavbar{
+      .icon{
+        font-size: 25px;
+        color: var(--WhiteColor);
+        &:hover{
+          color: var(--PrimaryColor);
+        }
+      }
+    }
+  }
+
+  .activeHeader{
+    background: var(--grayText);
+    box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
+
+  }
+}
+
