@@ -4,7 +4,42 @@ import { MdKingBed, MdBathtub, MdAirportShuttle, MdLocationOn } from "react-icon
 import { FaWifi } from "react-icons/fa6";
 import { BsArrowRightShort } from "react-icons/bs";
 import img from '../../Assets/istambul.jpg'
+import img2 from '../../Assets/istambul.jpg'
+import img3 from '../../Assets/istambul.jpg'
+import img4 from '../../Assets/istambul.jpg'
 
+
+
+const offers = [
+   {
+      id: 1,
+      imgSrc: img,
+      destTitle: 'Machu Picchu',
+      location: 'Pakistan',
+      price: '1250$',
+    },
+    {
+      id: 2,
+      imgSrc: img2,
+      destTitle: 'Santorini',
+      location: 'Iran',
+      price: '500$',
+    },
+    {
+      id: 3,
+      imgSrc: img3,
+      destTitle: 'Kyoto',
+      location: 'Dubai',
+      price: '300$',
+    },
+    {
+      id: 4,
+      imgSrc: img4,
+      destTitle: 'Istanbul',
+      location: 'Turkey',
+      price: '200$',
+    },
+]
 const Offer = () => {
   return (
     <section className='offer container section'>
@@ -15,16 +50,24 @@ const Offer = () => {
           <p>From historical cities to natural specteulars, come see the best of the world!</p>
         </div>
 
+
+
         <div className="mainContent grid">
-          <div className="singleOffer">
+          
+          {
+            offers.map(({id, imgSrc, destTitle, location, price}) => {
+              return (
+              <div className="singleOffer">
             <div className="destImage">
-              <img src={img} alt="Image Name" />
+              <img src={imgSrc} alt={destTitle} />
               <span className="discount">30% Off</span>
             </div>
 
             <div className="offerBody">
               <div className="price flex">
-                <h4>$1000</h4>
+                <h4>
+                {price}
+                </h4>
                 <span className="status">For Rent</span>
               </div>
 
@@ -54,7 +97,7 @@ const Offer = () => {
 
               <div className="location flex">
                 <MdLocationOn className='icon'/>
-                <small>450 Vine #310, London</small>
+                <small>450 Vine #310, {location}</small>
               </div>
 
               <button className='btn flex'>
@@ -62,8 +105,12 @@ const Offer = () => {
                 <BsArrowRightShort className='icon'/>
               </button>
             </div>
-          </div>
-        </div>
+              </div>
+              )
+            })
+          }
+        
+      </div>  
       </div>
     </section>
   )
