@@ -15,14 +15,10 @@ const App = () => {
     <Home/>
     <Popular/>
     <Offer/>
-   {/* 
-    
     <About/>
     <Blog/>
-    <Footer/> 
-*/}
+    {/*   <Footer/> */}
     </>
-    
    )
 }
 
