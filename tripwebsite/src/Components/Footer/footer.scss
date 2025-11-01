@@ -1,0 +1,114 @@
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(0, 0%, 18%);
+  --TextColor: hsl(240, 1%, 48%);
+  --WhiteColorDeam: hsl(0, 0%, 93%);
+  --greybg: hsl(0, 0%, 96%);
+  --grayText: rgb(190, 190, 190);
+  --InputColor: hsl(330, 12%, 97%);
+}
+
+.footer {
+  background: var(--greybg);
+  padding: 2rem 0;
+
+  .footerContainer {
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logoDiv {
+    .footerLogo {
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--BlackColor);
+
+      .icon {
+        font-size: 25px;
+        color: var(--PrimaryColor);
+      }
+    }
+
+    .socials {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .icon {
+        font-size: 35px;
+        background: var(--PrimaryColor);
+        color: var(--WhiteColor);
+        padding: 7px;
+        border-radius: 50%;
+        transition: 0.3s;
+
+        &:hover {
+          background: var(--BlackColor);
+        }
+      }
+    }
+
+  }
+
+  .footerLinks {
+    display: grid;
+    row-gap: .2rem;
+    .linkTitle {
+    
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--BlackColor);
+    }
+
+    .linksList {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 0.3rem 0;
+        &:hover{
+            transform: translateX(10px);
+            a{
+                color: var(--PrimaryColor);
+            }
+        }
+
+      }
+
+      a, .phone, .email {
+        text-decoration: none;
+        color: var(--TextColor);
+        font-size: 16px;
+        font-weight: 500;
+        transition: 0.3s;
+
+      }
+
+
+    }
+  }
+
+  .footerContact {
+    .linkTitle {
+      font-weight: 650;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .phone,
+    .email {
+      display: block;
+      margin-top: 0.3rem;
+      color: var(--BlackColor);
+      font-weight: 400;
+    }
+  }
+}

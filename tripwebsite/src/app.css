@@ -20,7 +20,6 @@
     --grayText: rgb(190, 190, 190);
     --InputColor: hsl(330, 12%, 97%);
     /* box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45); */
-
 }
 
 /* Default Styling */
@@ -103,3 +102,12 @@ input{
 }
 
 
+/* This is all for the default styling......... */
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 556px) {
+    .mainContent{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+}
