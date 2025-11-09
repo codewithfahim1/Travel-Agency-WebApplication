@@ -60,9 +60,8 @@ const Navbar = () => {
             <li className='navItem'>
               <a href='#' className='navLink'>Blog</a>
             </li>
-          </ul>
 
-          <div className='headerBtns flex'>
+             <div className='headerBtns flex'>
             <button className='btn loginBtn'>
               <a href='#'>Login</a>
             </button>
@@ -70,6 +69,10 @@ const Navbar = () => {
               <a href='#'>Sign Up</a>
             </button>
           </div>
+          
+          </ul>
+
+         
 
           <div onClick={removeNavbar} className='closeNavbar'>
             <AiFillCloseCircle className='icon' />

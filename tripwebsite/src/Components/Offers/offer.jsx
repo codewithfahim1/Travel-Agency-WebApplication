@@ -6,7 +6,6 @@ import { BsArrowRightShort } from "react-icons/bs";
 import img from '../../Assets/istambul.jpg'
 import img2 from '../../Assets/istambul.jpg'
 import img3 from '../../Assets/istambul.jpg'
-import img4 from '../../Assets/istambul.jpg'
 
 
 
@@ -32,13 +31,7 @@ const offers = [
       location: 'Dubai',
       price: '300$',
     },
-    {
-      id: 4,
-      imgSrc: img4,
-      destTitle: 'Istanbul',
-      location: 'Turkey',
-      price: '200$',
-    },
+    
 ]
 const Offer = () => {
   return (

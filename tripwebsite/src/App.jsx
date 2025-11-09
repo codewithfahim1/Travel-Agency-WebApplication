@@ -9,6 +9,9 @@ import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer/Footer'
 
 const App = () => {
+
+
+   fetch("http://localhost/backend/").then(res=>res.json()).then(data=>console.log(data));
    return (
     <>
     <Navbar/>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './popular.scss'
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from "react-icons/bs";
-import img from '../../Assets/istambul.jpg';
+import img from '../../Assets/Popular/Azadi_Iran.jfif'
 // so now we are going to use a high array method to display all the destination using map. to do so we need to list all the destination in one array "data" and larer we shall call each destination by index/id.
 
 const Data = [ 
@@ -42,7 +42,7 @@ const Popular = () => {
 
         <div className="secHeader flex">
           <div className="textDiv">
-            <h2 className="secTitle">Popular Destination</h2>
+            <h2 className="secTitle">Popular Destinations</h2>
             <p>
               From historical cities to natural spectaculars, come see the best of the world!
             </p>
@@ -54,7 +54,7 @@ const Popular = () => {
           </div>
         </div>
 
-        <div className="mainContent grid">
+        <div className="mainContent_p grid">
           {Data.map(({ id, imgSrc, destTitle, location, grade }) => {
             return(
             <div className="singleDestination">

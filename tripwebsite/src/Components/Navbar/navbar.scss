@@ -19,7 +19,7 @@
     justify-content: space-between;
     background: transparent;
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 2rem;
     z-index: 1000;
 
     .logoDiv {
@@ -57,6 +57,7 @@
         align-items: center;
 
         .navLists {
+          display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -180,8 +181,43 @@
 
     .btn{
       margin-left: 1rem;
+
+      a{
+        color: var(--WhiteColor);
+        font-weight: 500;
+      }
+    }
+
+    .loginBtn{
+      background: none;
+      border: 1px solid var(--PrimaryColor);
+
+      &:hover{
+        background: var(--PrimaryColor);
+        a{
+          color: var(--WhiteColor);
+        }
+      }
     }
    }
 }
 }
+}
+
+@media screen and (min-width: 960px) {
+  .header{
+    .navBar{
+      .navLists{
+        .navItem{
+          padding: 0 .7rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header{
+    padding: 1rem 8.5rem !important;
+  }
 }
