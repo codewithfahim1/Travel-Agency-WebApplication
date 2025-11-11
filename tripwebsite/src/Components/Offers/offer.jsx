@@ -3,9 +3,10 @@ import './offer.scss'
 import { MdKingBed, MdBathtub, MdAirportShuttle, MdLocationOn } from "react-icons/md";
 import { FaWifi } from "react-icons/fa6";
 import { BsArrowRightShort } from "react-icons/bs";
-import img from '../../Assets/istambul.jpg'
-import img2 from '../../Assets/istambul.jpg'
-import img3 from '../../Assets/istambul.jpg'
+import img from '../../Assets/Special/HOTEL_ISTAQLAL.webp'
+import img2 from '../../Assets/Special/Serena_Hotel.jpg'
+import img3 from '../../Assets/Special/Suadhan Hotel.jpg'
+
 
 
 
@@ -13,23 +14,23 @@ const offers = [
    {
       id: 1,
       imgSrc: img,
-      destTitle: 'Machu Picchu',
-      location: 'Pakistan',
-      price: '1250$',
+      destTitle: 'Istaqlal Hotel',
+      location: 'Iran - Tehran',
+      price: 'Istaqlal Hotel',
     },
     {
       id: 2,
       imgSrc: img2,
-      destTitle: 'Santorini',
-      location: 'Iran',
-      price: '500$',
+      destTitle: 'Serena Hotel',
+      location: 'Pakistan - IslamAbad',
+      price: 'Serena Hotel',
     },
     {
       id: 3,
       imgSrc: img3,
-      destTitle: 'Kyoto',
-      location: 'Dubai',
-      price: '300$',
+      destTitle: 'Suadhan Hotel',
+      location: 'Sk. No:8, Fatih, Istanbul',
+      price: 'Suadhan Hotel',
     },
     
 ]
@@ -39,7 +40,7 @@ const Offer = () => {
       <div className="secContainer">
 
         <div className="secIntro">
-          <h2 className="h2 secTitle">Special Offers</h2>
+          <h2 className="h2 secTitle">Special Offers And Hotel Bookings</h2>
           <p>From historical cities to natural specteulars, come see the best of the world!</p>
         </div>
 
@@ -90,7 +91,7 @@ const Offer = () => {
 
               <div className="location flex">
                 <MdLocationOn className='icon'/>
-                <small>450 Vine #310, {location}</small>
+                <small>{location}</small>
               </div>
 
               <button className='btn flex'>

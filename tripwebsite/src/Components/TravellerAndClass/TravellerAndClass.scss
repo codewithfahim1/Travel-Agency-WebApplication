@@ -1,0 +1,176 @@
+/* Colors */
+:root{
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+    --WhiteColor: hsl(0, 0%, 100%);
+    --BlackColor: hsl(0, 0%, 18%);
+    --TextColor: hsl(240, 1%, 48%);
+    --WhiteColorDeam: hsl(0, 0%, 93%);
+    --greybg: hsl(0, 0%, 96%);
+    --grayText: rgb(190, 190, 190);
+    --InputColor: hsl(330, 12%, 97%);
+}
+
+
+
+.traveller-class {
+  position: relative;
+  width: 100%;
+  z-index: 101; // ensures it's above .homeCard
+
+  .traveller-display {
+    width: 100%;
+    background: var(--InputColor);
+    border-radius: 10px;
+    border: none;
+    padding: 11.5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--TextColor);
+    z-index: 102;
+
+    .arrow {
+      font-size: 10px;
+      margin-left: 6px;
+    }
+  }
+
+  
+
+  .traveller-dropdown {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 11px;
+    z-index: 999; // floats above everything
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 7px;
+
+      .title {
+        display: block;
+        color: var(--TextColor);
+        font-weight: 500;
+        font-size: 13px;
+        padding-bottom: .4rem;
+      }
+
+      
+
+      .subtitle {
+        font-size: 11px;
+        color: var(--BlackColor);
+      }
+
+      .controls {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        button {
+          width: 24px;
+          height: 24px;
+          font-size: 12px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          background: #fff;
+          cursor: pointer;
+          font-weight: 600;
+
+          &:hover {
+            background: var(--PrimaryColor);
+            color: #fff;
+            border-color: var(--PrimaryColor);
+          }
+        }
+
+        span {
+          min-width: 18px;
+          font-size: 12px;
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+    }
+
+.classes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--TextColor);
+    cursor: pointer;
+
+    input[type="radio"] {
+      appearance: none;
+      margin: 0; // ⬅️ removes default spacing
+      padding: 0;
+      width: 13px;
+      height: 13px;
+      border: 1.5px solid var(--PrimaryColor);
+      border-radius: 50%;
+      background-color: transparent;
+      position: relative;
+      top: 0.5px; // ⬅️ vertical alignment tweak
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+
+      &:checked {
+        background-color: var(--PrimaryColor);
+        box-shadow: inset 0 0 0 2px var(--WhiteColor);
+        border-color: var(--PrimaryColor);
+      }
+
+      &:hover {
+        border-color: var(--HoverColor);
+      }
+    }
+
+    span {
+      margin-left: 5px; // ⬅️ exact spacing between radio and text
+    }
+  }
+}
+
+
+
+    
+
+    .done-btn {
+      margin-top: 10px;
+      background: var(--PrimaryColor);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 14px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+
+      &:hover {
+        background: var(--HoverColor);
+      }
+    }
+
+  
+
+  }
+}

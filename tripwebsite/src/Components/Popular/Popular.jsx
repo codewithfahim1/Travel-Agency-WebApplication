@@ -2,33 +2,37 @@ import React from 'react'
 import './popular.scss'
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from "react-icons/bs";
 import img from '../../Assets/Popular/Azadi_Iran.jfif'
+import img2 from '../../Assets/Popular/Pakistan.jfif'
+import img3 from '../../Assets/Popular/Dubai.jfif'
+import img4 from '../../Assets/Popular/Turkey.jfif'
+
 // so now we are going to use a high array method to display all the destination using map. to do so we need to list all the destination in one array "data" and larer we shall call each destination by index/id.
 
 const Data = [ 
   {
     id: 1,
-    imgSrc: img,
-    destTitle: 'Machu Picchu',
+    imgSrc: img2,
+    destTitle: 'IslamAbad',
     location: 'Pakistan',
     grade: 'CULTURAL RELAX',
   },
   {
     id: 2,
     imgSrc: img,
-    destTitle: 'Santorini',
+    destTitle: 'Tehran',
     location: 'Iran',
     grade: 'ROMANTIC',
   },
   {
     id: 3,
-    imgSrc: img,
-    destTitle: 'Kyoto',
+    imgSrc: img3,
+    destTitle: 'Dubai',
     location: 'Dubai',
     grade: 'TRADITIONAL',
   },
   {
     id: 4,
-    imgSrc: img,
+    imgSrc: img4,
     destTitle: 'Istanbul',
     location: 'Turkey',
     grade: 'HISTORICAL',
@@ -83,7 +87,7 @@ const Popular = () => {
                     <span className='dot'>
                       <BsDot className='icon'/>
                   </span>
-                  Dot
+                  
                   </span>
                 </div>
               </div>

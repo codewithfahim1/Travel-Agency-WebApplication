@@ -7,6 +7,7 @@ import Offer from './Components/Offers/offer'
 import About from './Components/About/About'
 import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer/Footer'
+import TicketResults from './Components/TicketResults/TicketResults';
 
 const App = () => {
 
